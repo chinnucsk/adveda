@@ -1,0 +1,12 @@
+{application, adveda,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { adveda_app, []}},
+  {env, []}
+ ]}.
