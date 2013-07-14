@@ -12,7 +12,12 @@
 
 start(_StartType, _StartArgs) ->
 	Dispatch = cowboy_router:compile([
-		{'_',[{"/", root_handler, []}]}
+		{'_',[
+				{"/", root_handler, []},
+				{"/status", status_handler, []}
+			 ]
+		}
+
 	]), 
 	{ok, _} = cowboy:start_http(http,100, [{port, 5544}],[{env, [{dispatch, Dispatch}]}]), 
     adveda_sup:start_link().
