@@ -1,11 +1,12 @@
 {application, adveda,
  [
-  {description, ""},
-  {vsn, "1"},
+  {description, "An OpenRTB Implementation in Erlang"},
+  {vsn, "0.1"},
   {registered, []},
   {applications, [
                   kernel,
-                  stdlib
+                  stdlib,
+                  cowboy
                  ]},
   {mod, { adveda_app, []}},
   {env, []}

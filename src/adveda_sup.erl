@@ -1,5 +1,6 @@
 
 -module(adveda_sup).
+-author("geekbull.in@gmail.com").
 
 -behaviour(supervisor).
 
