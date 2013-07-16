@@ -14,7 +14,8 @@ start(_StartType, _StartArgs) ->
 	Dispatch = cowboy_router:compile([
 		{'_',[
 				{"/", root_handler, []},
-				{"/status", status_handler, []}
+				{"/status", status_handler, []},
+				{"/test_post", test_post_handler, []}
 			 ]
 		}
 
